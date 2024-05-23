@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 2 - C.R.U.D.</title>
+    <link rel="stylesheet" href="../css/details_projets.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html#projets">&lt;== Retour à l'accueil</a>
+    </header>
+
+    <main>
+        <h1>Projet CRUD - Gestion des Films, Séries et Animes</h1>
+        <section>
+            <h2>Description du Projet</h2>
+            <p>Ce projet est une application web permettant de gérer une base de données de films, séries et animes. Il offre des fonctionnalités complètes de CRUD (Create, Read, Update, Delete) pour les utilisateurs inscrits et connectés.</p>
+            
+            <video controls>
+                <source src="../assets/vid/crud.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            
+            <h2>Fonctionnalités Principales</h2>
+            <h3>Gestion des Utilisateurs :</h3>
+            <ul>
+                <li>Inscription des utilisateurs avec validation par email.</li>
+                <li>Connexion et déconnexion sécurisées.</li>
+                <li>Gestion des sessions utilisateurs.</li>
+            </ul>
+
+            <h3>Fonctionnalités CRUD pour Films, Séries et Animes :</h3>
+            <ul>
+                <li><strong>Create :</strong> Ajout de nouveaux éléments (films, séries, animes) avec des informations telles que le titre, le réalisateur, l'année, le genre, la durée, la description, le lien de l'image, le lien de la vidéo et le nombre de saisons pour les séries et animes.</li>
+                <li><strong>Read :</strong> Affichage de la liste des éléments avec leurs détails.</li>
+                <li><strong>Update :</strong> Modification des informations des éléments existants.</li>
+                <li><strong>Delete :</strong> Suppression des éléments de la base de données.</li>
+            </ul>
+
+            <h2>Technologies Utilisées</h2>
+            <h3>Backend :</h3>
+            <ul>
+                <li><strong>PHP :</strong> pour la logique de l'application et les interactions avec la base de données.</li>
+                <li><strong>MySQL :</strong> pour le stockage des données.</li>
+            </ul>
+
+            <h3>Frontend :</h3>
+            <ul>
+                <li><strong>HTML :</strong> pour la structure des pages web.</li>
+                <li><strong>CSS :</strong> pour la mise en forme et le style des pages.</li>
+                <li><strong>JavaScript :</strong> pour des interactions dynamiques et la manipulation du DOM.</li>
+            </ul>
+
+            <h2>Sécurité</h2>
+            <ul>
+                <li>Utilisation de requêtes préparées pour prévenir les injections SQL.</li>
+                <li>Hachage des mots de passe avec <code>password_hash</code>.</li>
+                <li>Gestion des sessions PHP pour la connexion sécurisée des utilisateurs.</li>
+            </ul>
+
+            <h2>Expérience Utilisateur</h2>
+            <p>L'application est conçue pour offrir une interface utilisateur intuitive, avec une navigation simple et des formulaires clairs pour la gestion des éléments. Les utilisateurs peuvent facilement s'inscrire, se connecter et gérer leurs films, séries et animes préférés.</p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gaspard Fougerouse. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

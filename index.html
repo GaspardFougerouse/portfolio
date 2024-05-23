@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Portfolio - Gaspard Fougerouse</title>
+
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/navigation.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/projets.css">
+        <link rel="stylesheet" href="./css/footer.css">
+
+        <script src="./js/script.js" defer></script>
+    </head>
+
+    <body>
+        <ul class="navigation">
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <header>
+            <img class="logo" src="./assets/img/logo.png">
+            <section class="header-contenu">
+                <div class="header-texte">
+                    <h1 id="ecrit-dynamique"></h1>
+                    <p>Explorateur du web, passionné de code et compétiteur dans l'âme.</p>
+                    <div class="liens">
+                        <a href="https://www.linkedin.com/in/gaspard-fougerouse" target="_blank" title="Voir mon profil LinkedIn">LinkedIn</a>
+                        <a href="./assets/pdf/cv.pdf" target="_blank" title="Voir mon curriculum vitae">Curriculum</a>
+                    </div>
+                </div>
+                <div class="header-image">
+                    <img src="https://media.licdn.com/dms/image/D4E03AQETx-xYSCv2Vw/profile-displayphoto-shrink_800_800/0/1695980346827?e=1721260800&v=beta&t=A_o1rsGUMIj_8V_dPTqgIZOV9TtuxEsqqNa4GKlEId8" alt="photo-profil" />
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section id="a-propos">
+                <div class="a-propos-image">
+                    <video id="video-fond" autoplay muted loop>
+                        <source src="./assets/vid/vague.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="a-propos-texte">
+                    <h2 class="rubrique">À propos de moi</h2>
+                    <p>J'aime beaucoup l'innovation et la création. J'ai souvent jonglé avec le code pour construire des univers de jeux sur Unity, développer des applications dans divers langages mais surtout pour concevoir des sites internet. Diplômé en informatique, je peux naviguer entre les langages C++, HTML/CSS et JavaScript. Avec une expérience variée, allant de l'organisation d'événements à la relation client en banque ainsi que de nombreux projets (consultables plus loin sur ce site), je suis prêt à répondre aux demandes des clients.</p>
+                </div>
+            </section>
+
+            <section id="competences">
+                <h2 class="rubrique">Mes compétences</h2>
+                <div class="competence">
+                    <p>HTML</p>
+                    <progress class="progress-bar" value="80" max="100"></progress>
+                </div>
+                <div class="competence">
+                    <p>CSS</p>
+                    <progress class="progress-bar" value="90" max="100"></progress>
+                </div>
+                <div class="competence">
+                    <p>JavaScript</p>
+                    <progress class="progress-bar" value="50" max="100"></progress>
+                </div>
+                <div class="competence">
+                    <p>React</p>
+                    <progress class="progress-bar" value="30" max="100"></progress>
+                </div>
+                <div class="competence">
+                    <p>PHP</p>
+                    <progress class="progress-bar" value="70" max="100"></progress>
+                </div>
+                <div class="competence">
+                    <p>C++</p>
+                    <progress class="progress-bar" value="50" max="100"></progress>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2 class="rubrique">Mes expériences</h2>
+                <div class="chronologie">
+                    <div class="chronologie-cadre">
+                        <div class="chronologie-contenu">
+                            <h3>Employé de commune</h3>
+                            <span class="date">Juillet 2022</span>
+                            <p>Mise en place et ramassage d'infrastructures pour des évènements</p>
+                        </div>
+                    </div>
+                    <div class="chronologie-cadre">
+                        <div class="chronologie-contenu">
+                            <h3>Auxiliaire d'été à la banque</h3>
+                            <span class="date">Aout 2022</span>
+                            <p>Gérer les clients (appels, clients en direct), gestion de l'argent.</p>
+                        </div>
+                    </div>
+                    <div class="chronologie-cadre">
+                        <div class="chronologie-contenu">
+                            <h3>Auxiliaire d'été à la banque</h3>
+                            <span class="date">Juillet 2023</span>
+                            <p>Gérer les clients (appels, clients en direct), gestion de l'argent.</p>
+                        </div>
+                    </div>
+                    <div class="chronologie-cadre">
+                        <div class="chronologie-contenu">
+                            <h3>2ans en BUT informatique</h3>
+                            <span class="date">2022 - 2024</span>
+                            <p>Apprentissage de nombreux langages de programmations</p>
+                        </div>
+                    </div>
+                    <div class="chronologie-cadre">
+                        <div class="chronologie-contenu">
+                            <h3>Stage Openstudio</h3>
+                            <span class="date">Avril - Mai - Juin 2024</span>
+                            <p>Développement web dans sa globalité</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projets">
+                <h2 class="rubrique">Mes projets</h2>
+                <div class="cartes-container">
+                    <div class="carte">
+                        <div class="carte-face carte-recto">
+                            <img src="./assets/img/tetrablock.png" alt="Projet 1">
+                        </div>
+                        <div class="carte-face carte-verso">
+                            <div class="carte-titre">
+                                <h3>TetraBlock</h3>
+                            </div>
+                            <div class="carte-info">
+                                TetraBlock est une revisite innovante du légendaire "Tetris", proposant divers modes de jeu. L'un des mode de jeu est adapté pour permettre aux personnes en déficience visuelle de jouer. Ce mode permet une reconnaissance spatiale à l'aide de sons, permettant ainsi à tous de profiter de l'expérience TetraBlock.
+                                <a href="./projets/tetrablock.html">Lire la suite</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carte">
+                        <div class="carte-face carte-recto">
+                            <img src="./assets/img/crud_capture.png" alt="Projet 1">
+                        </div>
+                        <div class="carte-face carte-verso">
+                            <div class="carte-titre">
+                                <h3>Projet C.R.U.D.</h3>
+                            </div>
+                            <div class="carte-info">
+                                Un site internet de type CRUD, dans lequel l'utilisateur peut s'inscrire et se connecter, il peut choisir une catégorie (films, séries ou animes) pour y ajouter une annonces, puis il peut les supprimer et les modifier. Ces annonces sont des présentations de films, séries ou animes.
+                                <a href="./projets/crud.html">Lire la suite</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carte">
+                        <div class="carte-face carte-recto">
+                            <img src="./assets/img/musée.png" alt="Projet 1">
+                        </div>
+                        <div class="carte-face carte-verso">
+                            <div class="carte-titre">
+                                <h3>Musée en kart</h3>
+                            </div>
+                            <div class="carte-info">
+                                Le projet propose un musée unique où chaque œuvre est minutieusement modélisée à la main d'après des modèles connus. Les visiteurs peuvent explorer le musée à bord d'un kart, rendant la visite ludique et interactive. Chaque œuvre offre des interactions amusantes, et les visiteurs ont pour mission de collectionner une série de peintures cachées à travers le musée.
+                                <a href="./projets/musee.html">Lire la suite</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carte">
+                        <div class="carte-face carte-recto">
+                            <img src="./assets/img/castle.jpg" alt="Projet 1">
+                        </div>
+                        <div class="carte-face carte-verso">
+                            <div class="carte-titre">
+                                <h3>Dread Castle</h3>
+                            </div>
+                            <div class="carte-info">
+                                Ce projet est un jeu de type escape game dans lequel il y a plusieurs salles et dans chaque salles plusieurs énigmes, tout cela généré aléatoirement.
+                                <a href="./projets/castle.html">Lire la suite</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2 class="rubrique">De quoi me contacter !</h2>
+                <p>Email : <a href="mailto:gaspard00fg@gmail.com">gaspard00fg@gmail.com</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-contenu">
+                <div class="footer-section">
+                    <h3>Suivez-moi</h3>
+                    <a href="https://www.linkedin.com/in/gaspard-fougerouse" target="_blank" title="Voir mon profil LinkedIn">LinkedIn</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Informations légales</h3>
+                    <p>&copy; 2024 Gaspard Fougerouse. Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
+    
+    </body>
+
+</html>

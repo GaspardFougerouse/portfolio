@@ -1,0 +1,151 @@
+/*------------------------------
+    VARS
+------------------------------*/
+
+:root {
+    --primary-color: #f44336;
+    --hover-bg-color: #ffffff;
+    --hover-text-color: #f44336;
+    --box-shadow: 0px 14px 18px 0px #000000;
+    --bounce-translate: 10px;
+    --transition-duration: 0.3s;
+}
+
+/*------------------------------
+    HEADER
+------------------------------*/
+
+header {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 7rem;
+    z-index: 999;
+}
+
+header .header-contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .header-texte {
+    flex: 6;
+    margin-right: 50px;
+}
+
+header .header-texte small {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .header-texte h1 {
+    height: 450px;
+    width: 300px;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+header .header-texte .liens {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+/*------------------------------
+    PHOTO DE PROFIL
+------------------------------*/
+
+header .header-image {
+    flex: 5;
+}
+
+header .header-image img {
+    width: 100%;
+    border-radius: 50%;
+    transition: all 1.5s ease-in-out;
+}
+
+header .header-image img:hover {
+    transform: scale(1.5) rotate(360deg);
+}
+
+/*------------------------------
+    LIENS LINKEDIN ET CV
+------------------------------*/
+
+header .header-texte .liens a {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+    transform: translateY(calc(-1 * var(--bounce-translate)));
+    animation: bounce 1s infinite alternate;
+}
+
+header .header-texte .liens a:first-of-type {
+    animation-delay: 0.5s;
+}
+
+header .header-texte .liens a:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--hover-text-color);
+}
+
+header .header-texte p {
+    font-size: 20px;
+}
+
+/*------------------------------
+    ANIMATION DES BOUTONS
+------------------------------*/
+
+@keyframes bounce {
+    from {
+        transform: translateY(calc(-1 * var(--bounce-translate)));
+    }
+    to {
+        transform: translateY(var(--bounce-translate));
+    }
+}
+
+/*------------------------------
+    RESPONSIVE
+------------------------------*/
+
+@media screen and (max-width: 621px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .header-contenu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .header-texte {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    header .header-image img {
+        width: 250px;
+    }
+}

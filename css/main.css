@@ -1,0 +1,219 @@
+section h2.rubrique {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+section h2.rubrique:hover {
+    transform: scale(1.05);
+    cursor: default;
+}
+
+/*------------------------------
+    A PROPOS
+------------------------------*/
+#a-propos {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.a-propos-image {
+    flex: 5;
+    margin-right: 20px;
+    margin-left: -10px;
+}
+
+.a-propos-texte {
+    margin-left: 20px;
+    flex: 6;
+}
+
+.a-propos-texte p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+#video-fond {
+    width: 487px;
+    height: 512px;
+    mask-image: url('../assets/img/g.png');
+    transition: transform 0.5s ease-in-out;
+}
+
+#video-fond:hover {
+    transform: rotate(360deg);
+    mask-image: url('../assets/img/f.png');
+}
+
+
+/*------------------------------
+    BARRES DE PROGRESSIONS
+------------------------------*/
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #ff6600;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 880px) {
+    #a-propos {
+        flex-direction: column;
+    }
+
+    .a-propos-image,
+    .a-propos-texte {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .a-propos-texte {
+        margin-top: 20px;
+    }
+}
+
+/*------------------------------
+    MON EXPERIENCE
+------------------------------*/
+.chronologie {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.chronologie::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #f44336;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-radius: 2rem;
+}
+
+.chronologie-cadre {
+    padding: 20px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.chronologie-cadre::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #f44336;
+    border: 4px solid #FFF;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.chronologie-cadre:nth-child(odd) {
+    left: -37px;
+}
+
+.chronologie-cadre:nth-child(even) {
+    left: calc(50% + 3px);
+}
+
+.chronologie-cadre:nth-child(odd)::after {
+    right: -17px;
+}
+
+.chronologie-cadre:nth-child(even)::after {
+    left: -17px;
+}
+
+.chronologie-contenu {
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: relative;
+    border-radius: 6px;
+}
+
+.chronologie-contenu h3 {
+    margin-top: 0;
+    color: #f44336;
+}
+
+.chronologie-contenu .date {
+    font-size: 14px;
+    font-weight: bold;
+    color: #999;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .chronologie {
+        padding-left: 20px;
+    }
+
+    .chronologie::after {
+        left: 10px;
+    }
+
+    .chronologie-cadre {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 25px;
+        margin-bottom: 20px;
+    }
+
+    .chronologie-cadre::after {
+        left: 15px;
+    }
+
+    .chronologie-cadre:nth-child(even) {
+        left: 0;
+    }
+}
+
+
+/*------------------------------
+    MON CONTACT
+------------------------------*/
+#contact {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#contact h2 {
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ff4500;
+}

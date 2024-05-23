@@ -1,0 +1,34 @@
+/*------------------------------
+    VARS
+------------------------------*/
+
+:root {
+    --background: linear-gradient( #fcfdb2, #FFAF87);
+    --text-color: black;
+}
+
+
+/*------------------------------
+    BODY
+------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 10%;
+    font-family: monospace;
+    background: var(--background);
+    color: var(--text-color);
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px) rotateX(-90deg);
+    transition: 1s;
+}
+
+section.animate {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+}
