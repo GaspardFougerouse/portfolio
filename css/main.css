@@ -43,13 +43,13 @@ section h2.rubrique:hover {
 #video-fond {
     width: 487px;
     height: 512px;
-    mask-image: url('../../assets/img/g.png');
+    mask-image: url('portfolio/assets/img/g.png');
     transition: transform 0.5s ease-in-out;
 }
 
 #video-fond:hover {
     transform: rotate(360deg);
-    mask-image: url('../../assets/img/f.png');
+    mask-image: url('portfolio/assets/img/f.png');
 }
 
 
