@@ -78,6 +78,26 @@ main video {
     height: auto;
 }
 
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.images-container img {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+}
+
+main.decor-image,
+main.mechant-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
 
 main h2 {
     font-size: 1.5rem;
