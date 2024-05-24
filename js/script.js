@@ -78,7 +78,7 @@
         const video = document.getElementById('video-fond');
         
         video.addEventListener('mouseenter', function(event) {
-            load_video('mer');
+            load_video('montagne');
         });
 
         video.addEventListener('mouseleave', function(event) {
