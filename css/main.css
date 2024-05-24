@@ -151,7 +151,13 @@ section h2.rubrique:hover {
     background-color: #f1f1f1;
     position: relative;
     border-radius: 6px;
+    transition: 1s;
 }
+
+.chronologie-contenu:hover {
+    font-size: 14px;
+}
+
 
 .chronologie-contenu h3 {
     margin-top: 0;
