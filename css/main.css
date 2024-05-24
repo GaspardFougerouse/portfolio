@@ -6,13 +6,38 @@ section h2.rubrique {
     font-size: 32px;
     color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+section h2.rubrique::before,
+section h2.rubrique::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ed453fb3;
+    transition: all 0.3s ease;
+}
+
+section h2.rubrique::before {
+    top: 0;
+}
+
+section h2.rubrique::after {
+    bottom: 0;
+}
+
+section h2.rubrique:hover::before,
+section h2.rubrique:hover::after {
+    width: 0;
 }
 
 section h2.rubrique:hover {
     transform: scale(1.05);
     cursor: default;
 }
+
 
 /*------------------------------
     A PROPOS
