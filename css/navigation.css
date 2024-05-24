@@ -40,7 +40,7 @@
     transform: scale(1.05);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
     .navigation {
         flex-direction: column;
         align-items: flex-start;
