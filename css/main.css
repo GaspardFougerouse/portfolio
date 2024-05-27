@@ -96,7 +96,7 @@ section h2.rubrique:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 40px
 }
 
 .loisir {
@@ -106,6 +106,7 @@ section h2.rubrique:hover {
     overflow: hidden;
     cursor: pointer;
     border-radius: 2rem;
+    box-shadow: 20px 15px 15px 10px rgba(0,0,0,0.3);
 }
 
 .loisir .loisir-image {
